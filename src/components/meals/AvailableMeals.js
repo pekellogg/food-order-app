@@ -8,9 +8,10 @@ const AvailableMeals = () => {
   const mealsList = dummyMeals.map((meal) => {
     return (
       <MealItem
+        description={meal.description}
+        id={meal.id}
         key={meal.id}
         name={meal.name}
-        description={meal.description}
         price={meal.price}
       >
         {meal.name}
