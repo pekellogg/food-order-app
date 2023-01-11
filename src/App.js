@@ -7,14 +7,8 @@ import Meals from "./components/meals/Meals";
 function App() {
 
   const [cartVisibility, setCartVisibility] = useState(false);
-
-  const displayCartHandler = () => {
-    setCartVisibility(true);
-  };
-
-  const hideCartHandler = () => {
-    setCartVisibility(false);
-  };
+  const displayCartHandler = () => setCartVisibility(true);
+  const hideCartHandler = () => setCartVisibility(false);
 
   return (
     <CartProvider>
